@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://farifam.com/dijaminhalal" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="ME4xI88bl8.dijaminhalal" package="ME4xI88bl8" required_version="2.3"/>
+    <author href="http://www.farifam.com" email="sabitzhabit@gmai.com">Farifam</author>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <icon src="halal.png"/>
+    <name>Dijamin Halal</name>
+    <access origin="*" subdomains="true"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:profile name="mobile"/>
+</widget>
