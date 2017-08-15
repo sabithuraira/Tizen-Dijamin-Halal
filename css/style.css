@@ -22,7 +22,6 @@ header h1 {
     text-align: center;
 }
 
-
 input {
 	margin-top:10px;
     height: 35px;
@@ -84,11 +83,8 @@ img#message-img {
 }
 
 .footer{
-	position: fixed;/* 
-	width: 100%; */
-	bottom: 0;
-	left: 25%;
-    right:25%;
+	text-align:center;
+	margin-top: 50px;
 }
 
 #msg-box, #err-message{
