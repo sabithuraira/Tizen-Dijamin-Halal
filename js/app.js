@@ -15,6 +15,7 @@
 	        
 			$.getJSON("https://sites.google.com/macros/exec?service=AKfycbx_-gZbLP7Z2gGxehXhWMWDAAQsTp3e3bmpTBiaLuzSDQSbIFWD&menu=nama_produk&query="+name, function(result){
 				if(result.status=='success'){
+	    	        document.querySelector("#content-table").style.display = "block";
 					var content=$("#content-table"), str_table="";
 					
 					for(var i=0, ilen = result.data.length;i < ilen;++i){
@@ -33,15 +34,17 @@
 //	        	  	
 //	        	  	var img_data=result.data.zodiak.toLowerCase()+".jpg";
 //
-	    	        document.querySelector("#img-load").style.display = "none";
+//	    	        document.querySelector("#img-load").style.display = "none";
 //		        	document.getElementById("message-img").src = "./image/"+img_data;
 //	  	        	document.querySelector("#msg-box").style.display = "block";
 				}
 				else{
 			      	document.querySelector("#err-message").style.display = "block";
-			      	$("#err-message").html("Error fetching data!");
+			      	$("#err-message").html("Tidak ditemukan hasil!");
+	    	        document.querySelector("#content-table").style.display = "none";
 				}
-				
+
+    	        document.querySelector("#img-load").style.display = "none";
 			});
 			
 		}
